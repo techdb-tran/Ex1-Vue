@@ -1,0 +1,11 @@
+@import './base.css';
+@import url('https://fonts.googleapis.com/css2?family=Akatab:wght@800&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap')  
+;
+
+:root{
+  --black: #111111;
+  --white: #ffffff;
+  --orange: #FF564F;
+  --font-title: "Inknut Antiqua", serif;
+  --font-des: "Roboto Condensed"
+}
