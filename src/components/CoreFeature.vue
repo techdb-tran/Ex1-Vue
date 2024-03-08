@@ -9,7 +9,7 @@
         <div class="carousel__wrap" ref="carousel">
           <div class="carousel-item" v-for="(item, index) in carouselItems" :key="index">
             <div class='carousel-item__content'>
-              <img :src="imageBasePath+item.image" alt="img">
+              <img src="../assets/white-label.svg" alt="img">
               <h3>{{ item.title }}</h3>
               <p>{{ item.description }}</p>
             </div>
