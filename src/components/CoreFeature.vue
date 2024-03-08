@@ -9,7 +9,7 @@
         <div class="carousel__wrap" ref="carousel">
           <div class="carousel-item" v-for="(item, index) in carouselItems" :key="index">
             <div class='carousel-item__content'>
-              <img :src="item.image" alt="img">
+              <img :src="imageBasePath+item.image" alt="img">
               <h3>{{ item.title }}</h3>
               <p>{{ item.description }}</p>
             </div>
@@ -25,15 +25,16 @@
 export default {
   data() {
     return {
+      imageBasePath: process.env.NODE_ENV === 'development' ? '/src/assets/' : '/assets/',
       carouselItems: [
-        { image: "@/assets/white-label.svg", title: "White Label", description: "Minuteness of the parts formed a great hindrance to my speed, resolved, contrary to my first intention, to make the being." },
-        { image: "@/assets/white-label.svg", title: "White Label", description: "Minuteness of the parts formed a great hindrance to my speed, resolved, contrary to my first intention, to make the being." },
-        { image: "@/assets/code-export.svg", title: "Code Export", description: "Minuteness of the parts formed a great hindrance to my speed, resolved, contrary to my first intention, to make the being." },
-        { image: "@/assets/white-label.svg", title: "White Label", description: "Minuteness of the parts formed a great hindrance to my speed, resolved, contrary to my first intention, to make the being." },
-        { image: "@/assets/white-label.svg", title: "White Label", description: "Minuteness of the parts formed a great hindrance to my speed, resolved, contrary to my first intention, to make the being." },
-        { image: "@/assets/white-label.svg", title: "White Label", description: "Minuteness of the parts formed a great hindrance to my speed, resolved, contrary to my first intention, to make the being." },
-        { image: "@/assets/white-label.svg", title: "White Label", description: "Minuteness of the parts formed a great hindrance to my speed, resolved, contrary to my first intention, to make the being." },
-        { image: "@/assets/white-label.svg", title: "White Label", description: "Minuteness of the parts formed a great hindrance to my speed, resolved, contrary to my first intention, to make the being." },
+        { image: "white-label.svg", title: "White Label", description: "Minuteness of the parts formed a great hindrance to my speed, resolved, contrary to my first intention, to make the being." },
+        { image: "white-label.svg", title: "White Label", description: "Minuteness of the parts formed a great hindrance to my speed, resolved, contrary to my first intention, to make the being." },
+        { image: "code-export.svg", title: "Code Export", description: "Minuteness of the parts formed a great hindrance to my speed, resolved, contrary to my first intention, to make the being." },
+        { image: "white-label.svg", title: "White Label", description: "Minuteness of the parts formed a great hindrance to my speed, resolved, contrary to my first intention, to make the being." },
+        { image: "white-label.svg", title: "White Label", description: "Minuteness of the parts formed a great hindrance to my speed, resolved, contrary to my first intention, to make the being." },
+        { image: "white-label.svg", title: "White Label", description: "Minuteness of the parts formed a great hindrance to my speed, resolved, contrary to my first intention, to make the being." },
+        { image: "white-label.svg", title: "White Label", description: "Minuteness of the parts formed a great hindrance to my speed, resolved, contrary to my first intention, to make the being." },
+        { image: "white-label.svg", title: "White Label", description: "Minuteness of the parts formed a great hindrance to my speed, resolved, contrary to my first intention, to make the being." },
       ],
       arr: ['blue','#9013FE','#417505','purple', 'pink','orange','aqua','green'],
       translateXValues: {
@@ -96,7 +97,7 @@ export default {
       dotsContainer.querySelectorAll('.dot')[index].classList.add('active');
 
       this.currentIndex = index;
-    }
+    },
   }
 };
 </script>
