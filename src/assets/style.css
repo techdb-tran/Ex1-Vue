@@ -1922,17 +1922,11 @@ h1{
         margin-top: 52px;
         margin-left: 0px;
     }
-    .carousel__container{
-        width: 100%;
+    .carousel-item__content{
+        width: 550px;
     }
-    .carousel-item__content__odd,.carousel-item__content__even{
-        height: 384px;
-    }
-    .carousel-item{
-        margin-top: 40px;
-    }
-    .carousel-item p{
-        width: 500px;
+    .carousel-item__content p{
+        width: 400px;
         height: 165px;
     }
     .blog-wrap{

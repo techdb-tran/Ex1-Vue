@@ -25,7 +25,7 @@
                     <h5>ADDRESS</h5>
                     <p>3899 Fusce Rd. Frederick 
                       Nebraska 20620</p>
-                    <p><a href="dongbanbr002@gmail.com">info@agency.com</a></p>
+                    <p><a href="mailto:dongbanbr002@gmail.com">info@agency.com</a></p>
                     <p><a href="tel:+0354927517">+1 (234) 567-89-00</a></p>
                   </div>
                 </div>
