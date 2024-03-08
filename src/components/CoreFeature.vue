@@ -28,20 +28,21 @@ export default {
       carouselItems: [
         { image: "/src/assets/white-label.svg", title: "White Label", description: "Minuteness of the parts formed a great hindrance to my speed, resolved, contrary to my first intention, to make the being." },
         { image: "/src/assets/white-label.svg", title: "White Label", description: "Minuteness of the parts formed a great hindrance to my speed, resolved, contrary to my first intention, to make the being." },
+        { image: "/src/assets/code-export.svg", title: "Code Export", description: "Minuteness of the parts formed a great hindrance to my speed, resolved, contrary to my first intention, to make the being." },
+        { image: "/src/assets/white-label.svg", title: "White Label", description: "Minuteness of the parts formed a great hindrance to my speed, resolved, contrary to my first intention, to make the being." },
         { image: "/src/assets/white-label.svg", title: "White Label", description: "Minuteness of the parts formed a great hindrance to my speed, resolved, contrary to my first intention, to make the being." },
         { image: "/src/assets/white-label.svg", title: "White Label", description: "Minuteness of the parts formed a great hindrance to my speed, resolved, contrary to my first intention, to make the being." },
         { image: "/src/assets/white-label.svg", title: "White Label", description: "Minuteness of the parts formed a great hindrance to my speed, resolved, contrary to my first intention, to make the being." },
         { image: "/src/assets/white-label.svg", title: "White Label", description: "Minuteness of the parts formed a great hindrance to my speed, resolved, contrary to my first intention, to make the being." },
       ],
-      arr: ['blue','red','purple','yellow', 'pink','orange','aqua','green'],
+      arr: ['blue','#9013FE','#417505','purple', 'pink','orange','aqua','green'],
       translateXValues: {
         'blue': '-100%',
-        'red': '-200%',
-        'purple': '-300%',
-        'yellow': '-400%',
+        '#9013FE': '-200%',
+        '#417505': '-300%',
+        'purple': '-400%',
         'pink': '-500%',
         'orange': '-600%',
-        'aqua': '-700%',
       },
       isProcessing: false,
 
@@ -114,13 +115,13 @@ export default {
     margin-top: 100px;
 }
 .carousel-item__content {
-  width: 570px;
-  height: 288px;
+  max-width: 570px;
+  min-height: 288px;
   margin-left: auto;
 }
 .dots-container {
     text-align: center;
-    margin-top: 30px;
+    margin-top: 64px;
 }
 
 .dot {
@@ -128,11 +129,11 @@ export default {
     width: 15px;
     height: 15px;
     border-radius: 50%;
-    background-color: #bbb; /* Màu của dấu chấm không được chọn */
+    background-color: #bbb;
     margin: 0 5px;
     cursor: pointer;
 }
 .dot.active {
-    background-color: #333; /* Màu của dấu chấm khi được chọn */
+    background-color: #9013FE;
 }
 </style>

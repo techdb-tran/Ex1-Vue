@@ -163,6 +163,7 @@ h1{
     background-color:  #FF564F;
     border-radius: 50%;
     margin-top: 140px;
+    margin-right: 10px;
     border: none;
     position: relative;
     z-index: 10000;
@@ -544,6 +545,7 @@ h1{
 .clients-say-btn button{
     height: 48px;
     width: 48px;
+    margin-right: 10px;
     background-color: #FF564F;
     border-radius: 50%;
     border: none;
@@ -2819,11 +2821,9 @@ h1{
         margin-top: 52px;
         margin-left: auto;
     }
-    .carousel__container{
-        width: 100%;
-    }
-    .carousel-item__content__odd,.carousel-item__content__even{
-        height: 384px;
+    .carousel-item__content{
+       width: 329px;
+       height: 384px;
     }
     .carousel-item{
         margin-top: 80px;
@@ -2981,7 +2981,7 @@ h1{
         position: relative;
         display: flex;
     }
-    .clients-say-slide-item{
+    .clients-say-slide-item-1{
         background: #417505;
         width: 329px;
         height: 640px;
@@ -2989,6 +2989,16 @@ h1{
         margin-left: 0px;
         margin-top: -300px;
         border-radius: 5px;
+    }
+    .clients-say-slide-item-2{
+        background: #9013FE;
+        width: 329px;
+        height: 640px;
+    }
+    .clients-say-slide-item-3{
+        background: red;
+        width: 329px;
+        height: 640px;
     }
 .avatar-client h3{
     width: 160px;

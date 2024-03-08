@@ -82,7 +82,7 @@ export default {
     const agencyContent2El = ref(null);
     const pageCurrentEl = ref(null);
 
-    let slide1Show = ref(true);
+    let slide1Show = ref(false);
     let isProcessAgency = ref(false);
 
     const agencySlide = () => {
@@ -114,6 +114,7 @@ export default {
       agencyContent1El.value = document.querySelector(".agency__slide-1__container");
       agencyContent2El.value = document.querySelector(".agency__slide-2__container");
       pageCurrentEl.value = document.querySelector(".pageCurrent");
+      agencySlide();
     });
 
     const addEventListeners = () => {
