@@ -26,14 +26,14 @@ export default {
   data() {
     return {
       carouselItems: [
-        { image: "../assets/white-label.svg", title: "White Label", description: "Minuteness of the parts formed a great hindrance to my speed, resolved, contrary to my first intention, to make the being." },
-        { image: "../assets/white-label.svg", title: "White Label", description: "Minuteness of the parts formed a great hindrance to my speed, resolved, contrary to my first intention, to make the being." },
-        { image: "../assets/code-export.svg", title: "Code Export", description: "Minuteness of the parts formed a great hindrance to my speed, resolved, contrary to my first intention, to make the being." },
-        { image: "../assets/white-label.svg", title: "White Label", description: "Minuteness of the parts formed a great hindrance to my speed, resolved, contrary to my first intention, to make the being." },
-        { image: "../assets/white-label.svg", title: "White Label", description: "Minuteness of the parts formed a great hindrance to my speed, resolved, contrary to my first intention, to make the being." },
-        { image: "../assets/white-label.svg", title: "White Label", description: "Minuteness of the parts formed a great hindrance to my speed, resolved, contrary to my first intention, to make the being." },
-        { image: "../assets/white-label.svg", title: "White Label", description: "Minuteness of the parts formed a great hindrance to my speed, resolved, contrary to my first intention, to make the being." },
-        { image: "../assets/white-label.svg", title: "White Label", description: "Minuteness of the parts formed a great hindrance to my speed, resolved, contrary to my first intention, to make the being." },
+        { image: "/assets/white-label.svg", title: "White Label", description: "Minuteness of the parts formed a great hindrance to my speed, resolved, contrary to my first intention, to make the being." },
+        { image: "/assets/white-label.svg", title: "White Label", description: "Minuteness of the parts formed a great hindrance to my speed, resolved, contrary to my first intention, to make the being." },
+        { image: "/assets/code-export.svg", title: "Code Export", description: "Minuteness of the parts formed a great hindrance to my speed, resolved, contrary to my first intention, to make the being." },
+        { image: "/assets/white-label.svg", title: "White Label", description: "Minuteness of the parts formed a great hindrance to my speed, resolved, contrary to my first intention, to make the being." },
+        { image: "/assets/white-label.svg", title: "White Label", description: "Minuteness of the parts formed a great hindrance to my speed, resolved, contrary to my first intention, to make the being." },
+        { image: "/assets/white-label.svg", title: "White Label", description: "Minuteness of the parts formed a great hindrance to my speed, resolved, contrary to my first intention, to make the being." },
+        { image: "/assets/white-label.svg", title: "White Label", description: "Minuteness of the parts formed a great hindrance to my speed, resolved, contrary to my first intention, to make the being." },
+        { image: "/assets/white-label.svg", title: "White Label", description: "Minuteness of the parts formed a great hindrance to my speed, resolved, contrary to my first intention, to make the being." },
       ],
       arr: ['blue','#9013FE','#417505','purple', 'pink','orange','aqua','green'],
       translateXValues: {
