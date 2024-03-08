@@ -87,7 +87,7 @@ export default {
         const translateValue = this.translateXValues[this.arr[index]];
         if (translateValue !== undefined) {
           item.style.transform = `translateX(${translateValue})`;
-          item.style.transition = 'transform 2s'; // Corrected transition property
+          item.style.transition = 'transform 1s'; // Corrected transition property
         }
       });
 
@@ -102,7 +102,7 @@ export default {
 </script>
 <style>
 .carousel__container{
-  width: 1170px;
+  max-width: 1170px;
   position: relative;
   overflow-x: hidden;
 }
@@ -132,6 +132,10 @@ export default {
     background-color: #bbb;
     margin: 0 5px;
     cursor: pointer;
+    opacity: 0.7;
+}
+.dot:hover{
+  opacity: 1;
 }
 .dot.active {
     background-color: #9013FE;

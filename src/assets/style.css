@@ -40,6 +40,12 @@ h1{
 .logo{
     margin-top: 24px;
 }
+.logo:hover{
+    cursor: pointer;
+    color:#ff635c;
+    transform: scale(1.2);
+    transition: 0.2s;
+}
 .menu{
     display: flex;
     width: 1170px;
@@ -66,7 +72,10 @@ h1{
     display: block;
 }
 .menu__items a:hover{
-    color: #FF564F;
+    cursor: pointer;
+    color:#ff635c;
+    transform: scale(1.2);
+    transition: 0.2s;
 }
 .check-menu{
     display: flex;
@@ -134,7 +143,7 @@ h1{
     margin-top: 170px;
     margin-left: -170px;
     position: absolute;
-    z-index: -1;
+    z-index: -2;
 }
 .bitmap1{
     position: relative;
@@ -143,6 +152,7 @@ h1{
     background: #FF564F;
     margin-left: -240px;
     margin-top: 265px;
+    z-index: -1;
 }
 .bitmap2{
     position: relative;
@@ -151,6 +161,7 @@ h1{
     margin-left: -240px;
     margin-top: 265px;
     background: pink;
+    z-index: -1;
 }
 .agency__white{
     height: 340px;
@@ -169,8 +180,10 @@ h1{
     z-index: 10000;
 }
 .agency__white button:hover{
-    opacity: 0.3;
+    transform: scale(0.95);
     cursor: pointer;
+    opacity: 0.8;
+    transition: 0.1s;
 }
 .agency__white-wrap{
     width: 1170px;
@@ -261,8 +274,10 @@ h1{
     display: inline;
 }
 .learn-more-btn:hover{
+    transform: scale(0.99);
     cursor: pointer;
-    box-shadow: 2px 2px 2px 2px;
+    opacity: 0.8;
+    transition: 0.1s;
 }
 .explore{
     font-size: 16px;
@@ -274,8 +289,10 @@ h1{
     color: var(--black);
 }
 .explore:hover{
+    transform: scale(0.99);
     cursor: pointer;
-    box-shadow: 2px 2px;
+    opacity: 0.8;
+    transition: 0.1s;
 }
 .play-video{
     background-color: transparent;
@@ -320,6 +337,15 @@ h1{
     margin-left: 228px;
     color: #FFFFFF80;
     ;
+}
+.carousel-item__content{
+    opacity: 0.7;
+}
+.carousel-item__content:hover{
+    cursor: pointer;
+    opacity: 1;
+    transform: scale(0.95);
+    transition: 0.2s;
 }
 .carousel-item img{
     width: 48px;
@@ -457,6 +483,12 @@ h1{
     margin-top: 47px;
     position: relative;
 }
+.our-projects-banner:hover{
+    transform: scale(0.99);
+    cursor: pointer;
+    opacity: 0.8;
+    transition: 0.1s;
+}
 .our-projects-banner img{
     max-height: 470px;
     height: auto;
@@ -500,6 +532,12 @@ h1{
 #load-more-btn{
     width: 170px;
     height: 48px;
+}
+#load-more-btn:hover{
+    transform: scale(0.99);
+    cursor: pointer;
+    opacity: 0.8;
+    transition: 0.1s;
 }
 /* client-say */
 .client-say{
@@ -551,8 +589,10 @@ h1{
     border: none;
 }
 .clients-say-btn button:hover{
+    transform: scale(0.95);
     cursor: pointer;
-    opacity: 0.3;
+    opacity: 0.8;
+    transition: 0.1s;
 }
 .clients-say-white{
     width: 100vw;
@@ -593,6 +633,11 @@ h1{
     margin-left: 1600px;
     margin-top: -400px;
     border-radius: 5px;
+}
+.clients-say-slide-item-1:hover,.clients-say-slide-item-2:hover,.clients-say-slide-item-3:hover{
+    cursor: pointer;
+    opacity: 0.9;
+    transition: 0.1s;
 }
 .avatar-client{
     display: flex;
@@ -652,7 +697,7 @@ h1{
 .clients__wrap a:hover{
     cursor: pointer;
     transition: transform 0.3s ease;
-    transform: scale(1.15);
+    transform: scale(1.1);
 }
 /* blog */
 .blog__container {
@@ -786,6 +831,10 @@ h1{
     margin-top: 152px;
     border-radius: 5px;
     margin-left: 600px;
+}
+#email-form:hover{
+    transform: scale(0.99);
+    transition: 0.2s;
 }
 #label-email{
     display: block;
@@ -1005,18 +1054,15 @@ h1{
         margin-left: 0px;
         margin-top: 100px;
     }
-    .carousel__container{
-        width: 100%;
-    }
-    .carousel-item__content__odd,.carousel-item__content__even{
+    .carousel-item__content{
         height: 384px;
-        width: 800px;
+        width: 390px;
     }
     .carousel-item{
         margin-top: 40px;
     }
     .carousel-item p{
-        width: 700px;
+        width: 350px;
         height: 165px;
         margin-top: 19px;
         margin-left: 48px;
@@ -1424,17 +1470,11 @@ h1{
         margin-top: 52px;
         margin-left: 0px;
     }
-    .carousel__container{
-        width: 100%;
+    .carousel-item__content{
+        width: 320px;
     }
-    .carousel-item__content__odd,.carousel-item__content__even{
-        height: 384px;
-    }
-    .carousel-item{
-        margin-top: 40px;
-    }
-    .carousel-item p{
-        width: 600px;
+    .carousel-item__content p{
+        width: 250px;
         height: 165px;
     }
     .blog-wrap{
@@ -1736,12 +1776,13 @@ h1{
         display: flex;
         width: 250px;
         height: 100vh;
-        margin-top: 62px;
+        margin-top: 65px;
         right: -100%;
         flex-direction: column;
         justify-content: flex-start;
-        background: #2c3e50;
+        background: var(--black);
         z-index: 2000;
+        opacity: 0.8;
         text-align: center;
         transition: 0.5s;
     }
@@ -1752,9 +1793,11 @@ h1{
         display: block;
         margin: 20px 0;
     }
-    .menu__items ul li:hover{
+    .menu__items ul li a:hover{
         cursor: pointer;
-        background-color: #a04e4a;
+        background-color: var(--black);
+        transform: scale(0.999);
+        opacity: 1;
     }
     /* ---- */
     .agency__slide-1__wrap,.agency__slide-2__wrap{
@@ -2192,32 +2235,6 @@ h1{
     }
     .menu__items{
         display: flex;
-    }
-    .menu__items ul{
-        position: fixed;
-        display: flex;
-        width: 150px;
-        height: 100vh;
-        margin-top: 60px;
-        right: -100%;
-        flex-direction: column;
-        justify-content: flex-start;
-        background: #2c3e50;
-        z-index: 2000;
-        text-align: center;
-        transition: 0.5s;
-    }
-    .menu__items:hover ul{
-        right: 0;
-    }
-    .menu__items ul li a{
-        display: block;
-        margin: 20px 0;
-    }
-    .menu__items ul li a:hover{
-        cursor: pointer;
-        background: khaki;
-        color: #0082e6
     }
     .agency__slide-1__wrap,.agency__slide-2__wrap{
         width: 420px;
@@ -2673,11 +2690,10 @@ h1{
         display: flex;
         width: 150px;
         height: 100vh;
-        margin-top: 60px;
+        margin-top: 65px;
         right: -100%;
         flex-direction: column;
         justify-content: flex-start;
-        background: #2c3e50;
         z-index: 2000;
         text-align: center;
         transition: 0.5s;
@@ -2688,11 +2704,6 @@ h1{
     .menu__items ul li a{
         display: block;
         margin: 20px 0;
-    }
-    .menu__items ul li a:hover{
-        cursor: pointer;
-        background: khaki;
-        color: #0082e6
     }
     .agency__slide-1__wrap,.agency__slide-2__wrap{
         width: 329px;

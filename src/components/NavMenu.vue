@@ -1,7 +1,7 @@
 <template>
   <nav class="menu__wrap">
     <div class="menu">
-      <h3 class="logo">AGENCY</h3>
+      <h3 class="logo"><a href="#">AGENCY</a></h3>
       <div class="menu__items">
         <ul>
           <li><a href="#core-features" @click="scrollToSection('core-features')">About</a></li>
