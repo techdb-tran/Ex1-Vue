@@ -40,7 +40,12 @@ h1{
 .logo{
     margin-top: 24px;
 }
-.logo:hover{
+.logo a{
+    text-decoration: none;
+    color: var(--white);
+    display: block;
+}
+.logo a:hover{
     cursor: pointer;
     color:#ff635c;
     transform: scale(1.2);
@@ -449,12 +454,15 @@ h1{
     height: 48px;
     width: 170px;
 }
-.our-projects__portfolio li .selected{
+.our-projects__portfolio li .selected {
     color: var(--white);
     background-color: var(--black);
-    padding: auto;
+    padding: 8px 16px; 
     text-align: center;
-}
+    border-radius: 4px; 
+    display: inline-block; 
+    transition: background-color 0.3s, color 0.3s; 
+  }
 .our-projects__portfolio li:hover{
     opacity: 0.7;
 }

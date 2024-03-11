@@ -25,7 +25,6 @@
 export default {
   data() {
     return {
-      imageBasePath: process.env.NODE_ENV === 'development' ? '/src/assets/' : '/assets/',
       carouselItems: [
         { image: "white-label.svg", title: "White Label", description: "Minuteness of the parts formed a great hindrance to my speed, resolved, contrary to my first intention, to make the being." },
         { image: "white-label.svg", title: "White Label", description: "Minuteness of the parts formed a great hindrance to my speed, resolved, contrary to my first intention, to make the being." },

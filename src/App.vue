@@ -1,11 +1,4 @@
 <script setup>
-import Agency from './components/Agency.vue';
-import Advantage from './components/Advantage.vue';
-import CoreFeature from './components/CoreFeature.vue';
-import OurProject from './components/OurProject.vue';
-import ClientSay from './components/ClientSay.vue';
-import Blog from './components/Blog.vue';
-import NewLetter from './components/NewLetter.vue'
 </script>
 
 <template>
@@ -13,22 +6,44 @@ import NewLetter from './components/NewLetter.vue'
     <div class="web">
       <div class="web__container">
     <header class="agency">
-      <Agency/>
+      <agency></agency>
   </header>
   <main>
-    <Advantage/>
-    <CoreFeature/>
-    <OurProject/>
-    <ClientSay/>
-    <Blog/>
+    <advantage></advantage>
+    <core-feature></core-feature>
+    <our-project></our-project>
+    <client-say></client-say>
+    <blog></blog>
   </main>
   <footer>
-    <NewLetter/>
+    <new-letter></new-letter>
   </footer>
  </div>
   </div>
   </body>
 </template>
+<script setup>
+import { onMounted, onUnmounted } from 'vue';
+
+onMounted(() => {
+  window.addEventListener('scrollToSection', handleScrollToSection);
+});
+
+onUnmounted(() => {
+  window.removeEventListener('scrollToSection', handleScrollToSection);
+});
+
+const handleScrollToSection = (event) => {
+  const sectionId = event.detail.sectionId;
+  const targetElement = document.querySelector(`.${sectionId}`);
+  if (targetElement) {
+    targetElement.scrollIntoView({
+      behavior: "smooth",
+      block: "start"
+    });
+  }
+};
+</script>
 
 <style scoped>
 </style>

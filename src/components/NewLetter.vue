@@ -33,11 +33,11 @@
                    <div class="footer-right-item1">
                    <h5>MENU</h5>
                    <ul>
-                    <li><a href="#core-features">About</a></li>
-                    <li><a href="#our-projects-item2">Portfolio</a></li>
-                    <li><a href="#latest-blog">Blog</a></li>
-                    <li><a href="#clients-say-contain">Testimonials</a></li>
-                    <li><a href="#newsletter-container">Contact</a></li>
+                    <li><a href="#core-features__container"  @click="scrollToSection('core-features__container')">About</a></li>
+                    <li><a href="#our-projects__container"  @click="scrollToSection('our-projects__container')">Portfolio</a></li>
+                    <li><a href="#blog__container"  @click="scrollToSection('blog__container')">Blog</a></li>
+                    <li><a href="#clients-say-contain"  @click="scrollToSection('clients-say-contain')">Testimonials</a></li>
+                    <li><a href="#newsletter-container"  @click="scrollToSection('newsletter-container')">Contact</a></li>
                   </ul>
                    </div>
                    <div class="footer-right-item2">
@@ -48,3 +48,11 @@
           </div>
         </section>
 </template>
+<script setup>
+const scrollToSection = (sectionId) => {
+  const scrollEvent = new CustomEvent('scrollToSection', {
+    detail: { sectionId },
+  });
+  window.dispatchEvent(scrollEvent);
+};
+</script>

@@ -4,8 +4,8 @@
       <h3 class="logo"><a href="#">AGENCY</a></h3>
       <div class="menu__items">
         <ul>
-          <li><a href="#core-features" @click="scrollToSection('core-features')">About</a></li>
-          <li><a href="#our-projects-item2" @click="scrollToSection('our-projects-item2')">Portfolio</a></li>
+          <li><a href="#core-features__container" @click="scrollToSection('core-features__container')">About</a></li>
+          <li><a href="#our-projects__container" @click="scrollToSection('our-projects__container')">Portfolio</a></li>
           <li><a href="#newsletter-container" @click="scrollToSection('newsletter-container')">Contact</a></li>
         </ul>
         <div class="check-menu">
@@ -20,19 +20,13 @@
 </template>
 
 <script setup>
-import MenuLogo from '../components/icons/MenuLogo.vue';
-
 const scrollToSection = (sectionId) => {
-  const targetElement = document.querySelector(`.${sectionId}`);
-  if (targetElement) {
-    targetElement.scrollIntoView({
-      behavior: "smooth",
-      block: "start"
-    });
-  }
+  const scrollEvent = new CustomEvent('scrollToSection', {
+    detail: { sectionId },
+  });
+  window.dispatchEvent(scrollEvent);
 };
 </script>
 
 <style scoped>
-/* Bổ sung các quy tắc CSS scoped tại đây nếu cần */
 </style>

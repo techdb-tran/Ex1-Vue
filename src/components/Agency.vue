@@ -1,24 +1,6 @@
 <template>
           <div class="agency__black">
-            <nav class="menu__wrap">
-              <div class="menu">
-              <h3 class="logo">AGENCY</h3>
-              <div class="menu__items">
-                <ul>
-                  <li><a href="#core-features">About</a></li>
-                  <li><a href="#our-projects-item2">Portfolio</a></li>
-                  <li><a href="#newsletter-container">Contact</a></li>
-                </ul>
-                <div class="check-menu">
-                  <input type="checkbox" id="check"/>
-                  <label for="check" class="check-btn"
-                  >
-                    <img src="../assets/menu.svg" alt="menu-btn-img"/>
-                </label>
-                </div>
-              </div>
-              </div>
-            </nav>
+            <nav-menu></nav-menu>
             <div class="agency__slide">
               <div class="agency__slide-1__container">
                 <div class="agency__slide-1__wrap">
