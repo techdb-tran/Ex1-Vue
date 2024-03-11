@@ -11,7 +11,7 @@
         <div class="check-menu">
           <input type="checkbox" id="check"/>
           <label for="check" class="check-btn">
-            <MenuLogo />
+            <img src="../assets/menu.svg" alt="">
           </label>
         </div>
       </div>

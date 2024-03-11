@@ -20,7 +20,7 @@ app.component("new-letter", NewLetterVue);
 app.component("our-project", OurProjectVue);
 app.component("client-say", ClientSayVue);
 app.component("blog", BlogVue);
-app.component("nav-menu", NavMenuVue)
+app.component("nav-menu", NavMenuVue);
 
 app.mount("#app")
 
