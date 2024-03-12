@@ -50,6 +50,7 @@ const selectedItem = ref('');
 
 const selectItem = (item) => {
   selectedItem.value = item;
+  loadProjectsByField(item);
 };
 
 const loadProjectsByField = (field) => {
